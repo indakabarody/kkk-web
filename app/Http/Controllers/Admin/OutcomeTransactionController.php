@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 
 class OutcomeTransactionController extends Controller
@@ -12,7 +13,8 @@ class OutcomeTransactionController extends Controller
      */
     public function index()
     {
-        //
+        $transactions = Transaction::where('type', 'Outcome')->latest()->get();
+        return view('admin.pages.outcome-transactions.index', compact('transactions'));
     }
 
     /**
@@ -20,7 +22,7 @@ class OutcomeTransactionController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.outcome-transactions.create');
     }
 
     /**
@@ -28,7 +30,20 @@ class OutcomeTransactionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'amount_idr' => 'required|numeric',
+            'date' => 'required|date',
+            'notes' => 'nullable|string|max:65535',
+        ]);
+
+        Transaction::create([
+            'type' => 'Outcome',
+            'amount_idr' => $request->amount_idr,
+            'date' => $request->date,
+            'notes' => $request->notes,
+        ]);
+
+        return redirect()->route('admin.outcome-transactions.index')->with('toast_success', 'Berhasil menambahkan data transaksi.');
     }
 
     /**
@@ -44,7 +59,12 @@ class OutcomeTransactionController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Outcome',
+        ])->firstOrFail();
+
+        return view('admin.pages.outcome-transactions.edit', compact('transaction'));
     }
 
     /**
@@ -52,7 +72,25 @@ class OutcomeTransactionController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Outcome',
+        ])->firstOrFail();
+
+        $request->validate([
+            'amount_idr' => 'required|numeric',
+            'date' => 'required|date',
+            'notes' => 'nullable|string|max:65535',
+        ]);
+
+        $transaction->update([
+            'type' => 'Outcome',
+            'amount_idr' => $request->amount_idr,
+            'date' => $request->date,
+            'notes' => $request->notes,
+        ]);
+
+        return redirect()->route('admin.outcome-transactions.index')->with('toast_success', 'Berhasil mengubah data transaksi.');
     }
 
     /**
@@ -60,6 +98,13 @@ class OutcomeTransactionController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Outcome',
+        ])->firstOrFail();
+
+        $transaction->delete();
+
+        return back()->with('toast_success', 'Berhasil menghapus data transaksi.');
     }
 }

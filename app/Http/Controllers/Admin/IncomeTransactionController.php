@@ -34,11 +34,24 @@ class IncomeTransactionController extends Controller
     {
         $request->validate([
             'student_id' => 'required|numeric',
-            'category' =>'required|string|in:Iuran,Denda,Lainnya',
-            'amount_idr' =>'required|numeric',
+            'category' => 'required|string|in:Iuran,Denda,Lainnya',
+            'amount_idr' => 'required|numeric',
             'date' => 'required|date',
-            'notes' =>'nullable|string|max:65535',
+            'notes' => 'nullable|string|max:65535',
         ]);
+
+        $student = Student::findOrFail($request->student_id);
+
+        Transaction::create([
+            'student_id' => $student->id,
+            'type' => 'Income',
+            'category' => $request->category,
+            'amount_idr' => $request->amount_idr,
+            'date' => $request->date,
+            'notes' => $request->notes,
+        ]);
+
+        return redirect()->route('admin.income-transactions.index')->with('toast_success', 'Berhasil menambahkan data transaksi.');
     }
 
     /**
@@ -54,7 +67,14 @@ class IncomeTransactionController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Income',
+        ])->firstOrFail();
+
+        $students = Student::orderBy('nim', 'ASC')->get();
+
+        return view('admin.pages.income-transactions.edit', compact('transaction', 'students'));
     }
 
     /**
@@ -62,7 +82,31 @@ class IncomeTransactionController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Income',
+        ])->firstOrFail();
+
+        $request->validate([
+            'student_id' => 'required|numeric',
+            'category' => 'required|string|in:Iuran,Denda,Lainnya',
+            'amount_idr' => 'required|numeric',
+            'date' => 'required|date',
+            'notes' => 'nullable|string|max:65535',
+        ]);
+
+        $student = Student::findOrFail($request->student_id);
+
+        $transaction->update([
+            'student_id' => $student->id,
+            'type' => 'Income',
+            'category' => $request->category,
+            'amount_idr' => $request->amount_idr,
+            'date' => $request->date,
+            'notes' => $request->notes,
+        ]);
+
+        return redirect()->route('admin.income-transactions.index')->with('toast_success', 'Berhasil mengubah data transaksi.');
     }
 
     /**
@@ -70,6 +114,13 @@ class IncomeTransactionController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $transaction = Transaction::where([
+            'id' => $id,
+            'type' => 'Income',
+        ])->firstOrFail();
+
+        $transaction->delete();
+
+        return back()->with('toast_success', 'Berhasil menghapus data transaksi.');
     }
 }
