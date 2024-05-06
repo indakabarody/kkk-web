@@ -54,6 +54,7 @@ License: For each use you must have a valid license purchased only from above li
 {{-- begin::Body --}}
 
 <body id="kt_body" class="auth-bg bgi-size-cover bgi-position-center">
+    @include('sweetalert::alert')
     {{-- begin::Theme mode setup on page load --}}
     <script>
         var defaultThemeMode = "light";

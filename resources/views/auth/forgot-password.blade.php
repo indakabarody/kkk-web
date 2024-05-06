@@ -23,7 +23,7 @@
                     <h1 class="text-dark mb-3">@yield('title')</h1>
                     {{-- end::Title --}}
                     {{-- begin::Link --}}
-                    <div class="text-gray-400 fw-bold fs-4">Masukkan email untuk reset password.</div>
+                    <div class="text-gray-400 fw-bold fs-4">Masukkan email untuk mengatur ulang kata sandi.</div>
                     {{-- end::Link --}}
                 </div>
                 @if (session('status'))
