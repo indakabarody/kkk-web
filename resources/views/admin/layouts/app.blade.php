@@ -626,8 +626,8 @@
                         <div class="text-dark order-2 order-md-1">
                             <span class="text-gray-400 fw-semibold me-1">Copyright &copy;
                                 {{ Carbon\Carbon::now()->year }}</span>
-                            <a href="{{ $appSetting->institution_url ?? url('') }}" target="_blank"
-                                class="text-muted text-hover-primary fw-semibold me-2 fs-6">{{ $appSetting->institution_name ?? config('app.name') }}</a>
+                            <a href="https://indakabarody.com" target="_blank"
+                                class="text-muted text-hover-primary fw-semibold me-2 fs-6">Indaka Barody</a>
                         </div>
                         {{-- end::Copyright --}}
                         {{-- begin::Menu --}}
