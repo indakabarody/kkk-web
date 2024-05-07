@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "nim": "2205101087P",
+        "name": "Indaka Barody",
+        "email": "indakabarody16@gmail.com",
+        "created_at": "2024-05-06 17:59:27",
+        "updated_at": "2024-05-06 18:00:54"
+    },
+    {
+        "id": 2,
+        "nim": "2005101072P",
+        "name": "Alvin Rimbayanto",
+        "email": "alvinrimbayanto@gmail.com",
+        "created_at": "2024-05-07 08:12:17",
+        "updated_at": "2024-05-07 08:12:17"
+    },
+    {
+        "id": 3,
+        "nim": "2105101074",
+        "name": "Maulana Ruhaedi Putra",
+        "email": "maulanaputra2003@gmail.com",
+        "created_at": "2024-05-07 08:12:37",
+        "updated_at": "2024-05-07 08:12:37"
+    },
+    {
+        "id": 4,
+        "nim": "2105101076",
+        "name": "Matius Genara Arya Wicaksono",
+        "email": "matiusgenaraarya7@gmail.com",
+        "created_at": "2024-05-07 08:13:14",
+        "updated_at": "2024-05-07 08:13:14"
+    },
+    {
+        "id": 5,
+        "nim": "2105101077",
+        "name": "Muhammad Firdaus Gunawan",
+        "email": "dosudosu17@gmail.com",
+        "created_at": "2024-05-07 08:13:36",
+        "updated_at": "2024-05-07 08:13:36"
+    },
+    {
+        "id": 6,
+        "nim": "2105101079",
+        "name": "Kahfi Amani Fatihah",
+        "email": "kahfiamani@gmail.com",
+        "created_at": "2024-05-07 08:14:00",
+        "updated_at": "2024-05-07 08:14:00"
+    },
+    {
+        "id": 7,
+        "nim": "2105101080",
+        "name": "Hestia Nurliana Putri",
+        "email": "hestianurlianaputri19@gmail.com",
+        "created_at": "2024-05-07 08:14:27",
+        "updated_at": "2024-05-07 08:14:27"
+    },
+    {
+        "id": 8,
+        "nim": "2105101081",
+        "name": "Wahyu Nur Cahyo",
+        "email": "whynurcahyo29@gmail.com",
+        "created_at": "2024-05-07 08:14:59",
+        "updated_at": "2024-05-07 08:14:59"
+    },
+    {
+        "id": 9,
+        "nim": "2105101084",
+        "name": "Anang Arianto",
+        "email": "anangarianto29@gmail.com",
+        "created_at": "2024-05-07 08:15:21",
+        "updated_at": "2024-05-07 08:15:21"
+    },
+    {
+        "id": 10,
+        "nim": "2105101085",
+        "name": "Rikky Dwi Setiawan",
+        "email": "rikkysetiawan01@gmail.com",
+        "created_at": "2024-05-07 08:15:49",
+        "updated_at": "2024-05-07 08:15:49"
+    },
+    {
+        "id": 11,
+        "nim": "2105101089",
+        "name": "Dafian Ilham Pratama",
+        "email": "dafianzx@gmail.com",
+        "created_at": "2024-05-07 08:16:08",
+        "updated_at": "2024-05-07 08:16:08"
+    },
+    {
+        "id": 12,
+        "nim": "2105101092",
+        "name": "Hendito Kristian Yuda",
+        "email": "henditokristian@gmail.com",
+        "created_at": "2024-05-07 08:16:32",
+        "updated_at": "2024-05-07 08:16:32"
+    },
+    {
+        "id": 13,
+        "nim": "2105101094",
+        "name": "Moh Rizal Bagus Cahyono Putro",
+        "email": "rizalbaguscp06@gmail.com",
+        "created_at": "2024-05-07 08:16:58",
+        "updated_at": "2024-05-07 08:16:58"
+    },
+    {
+        "id": 14,
+        "nim": "2105101095",
+        "name": "Muhammad Yusuf Fauzan",
+        "email": "iniznet@gmail.com",
+        "created_at": "2024-05-07 08:17:47",
+        "updated_at": "2024-05-07 08:17:47"
+    },
+    {
+        "id": 15,
+        "nim": "2105101096",
+        "name": "Refi Mariska Putri",
+        "email": "refimariskap@gmail.com",
+        "created_at": "2024-05-07 08:18:17",
+        "updated_at": "2024-05-07 08:18:17"
+    },
+    {
+        "id": 16,
+        "nim": "2105101098",
+        "name": "Yahya Dzakiru Ra'if Gusrini",
+        "email": "yahyadzakiruraifgr@gmail.com",
+        "created_at": "2024-05-07 08:19:13",
+        "updated_at": "2024-05-07 08:19:13"
+    },
+    {
+        "id": 17,
+        "nim": "2105101099",
+        "name": "Dini Fitri Wulandari",
+        "email": "dinifitriw022@gmail.com",
+        "created_at": "2024-05-07 08:19:45",
+        "updated_at": "2024-05-07 08:19:45"
+    },
+    {
+        "id": 18,
+        "nim": "2105101100",
+        "name": "Ryan Setya Wardana",
+        "email": "ryansetya40@gmail.com",
+        "created_at": "2024-05-07 08:20:11",
+        "updated_at": "2024-05-07 08:20:11"
+    },
+    {
+        "id": 19,
+        "nim": "2105101104",
+        "name": "Rizki Ramadhan",
+        "email": "rizkiramadhan3020@gmail.com",
+        "created_at": "2024-05-07 08:20:57",
+        "updated_at": "2024-05-07 08:20:57"
+    },
+    {
+        "id": 20,
+        "nim": "2105101105",
+        "name": "Dova Arya Saputra",
+        "email": "dovaarya2623@gmail.com",
+        "created_at": "2024-05-07 08:21:32",
+        "updated_at": "2024-05-07 08:21:32"
+    },
+    {
+        "id": 21,
+        "nim": "2105101106",
+        "name": "Bierza Zimran Arelie",
+        "email": "areliemdn2015@gmail.com",
+        "created_at": "2024-05-07 08:22:39",
+        "updated_at": "2024-05-07 08:22:39"
+    },
+    {
+        "id": 22,
+        "nim": "2105101111",
+        "name": "Belca Setya Budi",
+        "email": "hackermo53@gmail.com",
+        "created_at": "2024-05-07 08:23:02",
+        "updated_at": "2024-05-07 08:23:02"
+    },
+    {
+        "id": 23,
+        "nim": "2205101010P",
+        "name": "Tria Aprilia Dina Sunaryo",
+        "email": "aprilia.seoul@gmail.com",
+        "created_at": "2024-05-07 08:23:50",
+        "updated_at": "2024-05-07 08:23:50"
+    },
+    {
+        "id": 24,
+        "nim": "2305101063",
+        "name": "Rofiq Nur Albiyona",
+        "email": "rofiqnuralbiyona@gmail.com",
+        "created_at": "2024-05-07 08:24:27",
+        "updated_at": "2024-05-07 08:24:27"
+    }
+]
