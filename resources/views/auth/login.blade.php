@@ -79,6 +79,16 @@
                         <span class="indicator-label">Log In</span>
                     </button>
                     {{-- end::Submit button --}}
+                    {{-- begin::Separator --}}
+                    <div class="text-center text-muted text-uppercase fw-bolder mb-5">atau</div>
+                    {{-- end::Separator --}}
+                    {{-- begin::Google link --}}
+                    <a href="{{ route('social-auth', 'google') }}"
+                        class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
+                        <img alt="Logo" src="{{ asset('themes/admin/media/svg/brand-logos/google-icon.svg') }}"
+                            class="h-20px me-3" />Login dengan Google
+                    </a>
+                    {{-- end::Google link --}}
                 </div>
                 {{-- end::Actions --}}
             </form>
