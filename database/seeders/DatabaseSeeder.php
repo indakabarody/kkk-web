@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Student;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use TimoKoerber\LaravelJsonSeeder\JsonDatabaseSeeder;
@@ -22,5 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(JsonDatabaseSeeder::class);
+
+        Student::factory(10)->create();
     }
 }
