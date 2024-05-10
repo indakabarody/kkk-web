@@ -50,6 +50,8 @@ class StudentFeatureTest extends TestCase
                 'email' => $student->email,
             ]
         ]);
+
+        $student->delete();
     }
 
     /**
@@ -70,6 +72,8 @@ class StudentFeatureTest extends TestCase
             'name' => $student->name,
             'email' => $student->email,
         ]);
+
+        $student->delete();
     }
 
     /**
