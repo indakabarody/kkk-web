@@ -159,10 +159,6 @@
     <script src="{{ asset('themes/admin/plugins/custom/datatables/datatables.bundle.js') }}"></script>
     <script>
         $("#kt_transactions_table").DataTable({
-            "language": {
-                "url": "//cdn.datatables.net/plug-ins/1.13.2/i18n/{{ str_replace('_', '-', app()->getLocale()) }}.json",
-                "lengthMenu": "Show _MENU_",
-            },
             "dom": "<'row'" +
                 "<'col-sm-6 d-flex align-items-center justify-conten-start'l>" +
                 "<'col-sm-6 d-flex align-items-center justify-content-end'f>" +
