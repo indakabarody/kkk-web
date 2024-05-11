@@ -8,7 +8,7 @@ use App\Http\Controllers\Admin\ProfileController as AdminProfileController;
 use App\Http\Controllers\Admin\StudentController as AdminStudentController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth', 'active', 'role:superadmin,admin'])->prefix('admin')->name('admin.')->group(function () {
+Route::middleware(['auth', 'active', 'roles:superadmin,admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminHomeController::class, 'index'])->name('dashboard');
 
     Route::prefix('profile')->name('profile.')->group(function () {

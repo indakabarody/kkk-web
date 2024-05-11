@@ -22,7 +22,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->alias([
             'active' => EnsureUserIsActive::class,
-            'role' => EnsureUserHasRole::class
+            'roles' => EnsureUserHasRole::class
         ]);
 
         $middleware->web(replace: [
